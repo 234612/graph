@@ -1,0 +1,9 @@
+# JetBrains IDE
+.idea/
+*.iml
+__pycache__/
+.claude
+*.pyc
+.env
+logs/
+checkpoints/
