@@ -5,5 +5,5 @@ __pycache__/
 .claude
 *.pyc
 .env
-logs/
 checkpoints/
+/.workbuddy/

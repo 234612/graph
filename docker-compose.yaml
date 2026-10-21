@@ -12,7 +12,8 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./docker/gmall.sql:/docker-entrypoint-initdb.d/gmall.sql:ro
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+      - ./docker/business_data.sql:/docker-entrypoint-initdb.d/02_business_data.sql:ro
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
